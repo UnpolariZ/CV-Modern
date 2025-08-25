@@ -1,0 +1,41 @@
+  /* Conteneur des boutons */
+.language-switch-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 7.5%;
+  z-index: 3;
+}
+
+/* Style de base des boutons */
+.language-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  background-color: #202020;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Effet quand un bouton est sélectionné (actif) */
+.language-button.active {
+  background-color: #fff;
+  color: #333;
+  border-color: #202020;
+}
+
+/* Effet au survol des boutons */
+.language-button:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #333;
+}
+
+/* Transition fluide */
+.language-button:focus {
+  outline: none;
+}

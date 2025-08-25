@@ -1,0 +1,133 @@
+
+.navbar {
+    width: 100%;
+    font-size: 18px;
+    top: 2.5%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (min-width : 750px) {
+    .navbar {
+    top: 4.5%;
+    }
+}
+.navbar__container {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    border: black solid 1px;
+    background-color: #e2e2e2; 
+    margin-right: 16.5%;
+}
+@media only screen and (min-width : 1040px) {
+    .navbar__container {
+        margin-right: 0;
+    }
+}   
+.navbar__container.dark {
+    border: white solid 1px;
+    background-color: black;
+}
+
+.navbar__button {
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.navbar__logo {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navbar__logo.dark {
+    filter: invert(1);
+    transition: 0.3s;
+}
+.navbar__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 7.5px;
+}
+.souligner:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -.25rem;
+    left: 7.5%;
+    width: 0;
+    height: .25rem;
+    border-radius: .125rem;
+    background-color: black;
+    transition: opacity .3s ease;
+    opacity: 0;
+    transition: 1s
+}
+
+.souligner.dark:after {
+    background-color: white;
+}
+.actif:after,.souligner:hover:after {
+    opacity: 1;
+    width: 82.5%
+}
+
+
+.leftNavBar {
+    display: none;
+    width: 250px;
+}
+@media only screen and (min-width : 1040px) {
+    .leftNavBar{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 25%;
+        left: 1.5%;    
+        z-index: 2;
+        padding: 2.5%;
+        padding-right: 2.5%;
+        border-radius: 175px;
+        transition: 0.3s;
+        box-shadow: 2.5px 2.5px 150px rgba(29, 29, 29, 0.301);
+        background: rgba(255, 255, 255, 0.24);
+        }
+    .leftNavBar:hover{        
+        box-shadow: 2.5px 2.5px 150px rgba(29, 29, 29, 0.89);
+        background: rgba(255, 255, 255, 0.36);
+        transition: 0.3s;
+    }
+
+    .leftNavBar.dark{
+        box-shadow: 2.5px 2.5px 150px rgba(29, 29, 29, 0.233);
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.13);
+    }
+    .leftNavBar:hover.dark{
+        box-shadow: 2.5px 2.5px 150px rgba(29, 29, 29, 0.623);
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.36);
+    }
+}
+.navBarLeftLink {
+    padding: 7.5%;
+    width: max-content;
+    position: relative;
+    text-shadow: 1px 1px 2px rgb(189, 189, 189), 0 0 1em rgb(141, 141, 141), 0 0 0.2em rgb(255, 255, 255);
+}
+.navBarLeftLink.dark {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(112, 112, 112), 0 0 0.2em rgb(0, 0, 0);
+}
+
+
