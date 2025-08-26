@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/CV-Modern/static/css/main.09f23377.css",
+    "main.js": "/CV-Modern/static/js/main.bc470449.js",
+    "static/js/488.0588cd25.chunk.js": "/CV-Modern/static/js/488.0588cd25.chunk.js",
+    "static/media/aem.png": "/CV-Modern/static/media/aem.f218fc91ccd6491461bc.png",
+    "static/media/htmlcssjs.png": "/CV-Modern/static/media/htmlcssjs.56a565e4ed0b1242e434.png",
+    "static/media/photoshop.png": "/CV-Modern/static/media/photoshop.33821753c0629b734e8f.png",
+    "static/media/illustrator.png": "/CV-Modern/static/media/illustrator.cc77895294e2f7e568a1.png",
+    "static/media/gsap.jpg": "/CV-Modern/static/media/gsap.bcf28a0a761398e4f02d.jpg",
+    "static/media/blender.png": "/CV-Modern/static/media/blender.233227a9202bb56e7e76.png",
+    "static/media/pp.webp": "/CV-Modern/static/media/pp.2d71089c8935a23e881e.webp",
+    "static/media/logo_cv.png": "/CV-Modern/static/media/logo_cv.4c13e06e0cd21bd441d9.png",
+    "static/media/adobexd.png": "/CV-Modern/static/media/adobexd.239afbb5569e453f89b6.png",
+    "static/media/jquery.png": "/CV-Modern/static/media/jquery.195def9b1c06d2f7809a.png",
+    "static/media/threejs.png": "/CV-Modern/static/media/threejs.eaea69a6236c6fd1f6fd.png",
+    "static/media/figma.png": "/CV-Modern/static/media/figma.2ca2a44e3596d1c62de9.png",
+    "static/media/scss.png": "/CV-Modern/static/media/scss.f4035c2ae5f2d2970164.png",
+    "static/media/react.webp": "/CV-Modern/static/media/react.03b92219352856222097.webp",
+    "static/media/opquast.svg": "/CV-Modern/static/media/opquast.0f76168ec5bf5b366d3c7cc4045a32f8.svg",
+    "static/media/gitHub.svg": "/CV-Modern/static/media/gitHub.42210ad5a64676c934a2614fd1d90d51.svg",
+    "static/media/calendar.svg": "/CV-Modern/static/media/calendar.f66327227633cc25578ea178541a9da9.svg",
+    "index.html": "/CV-Modern/index.html",
+    "static/media/about.svg": "/CV-Modern/static/media/about.0543c93622b543ae255ff26245ac3db5.svg",
+    "static/media/linkedIn.svg": "/CV-Modern/static/media/linkedIn.bba7bdcacfce7d9cfd72da65416c62b3.svg",
+    "static/media/home.svg": "/CV-Modern/static/media/home.c8e9d6680c639d1d4106e1dd4500f307.svg",
+    "static/media/work.svg": "/CV-Modern/static/media/work.79c98238065aee6182bf89d7a5c378a0.svg",
+    "static/media/email.svg": "/CV-Modern/static/media/email.01beeab905a172def851e21b2cc4e6d3.svg",
+    "main.09f23377.css.map": "/CV-Modern/static/css/main.09f23377.css.map",
+    "main.bc470449.js.map": "/CV-Modern/static/js/main.bc470449.js.map",
+    "488.0588cd25.chunk.js.map": "/CV-Modern/static/js/488.0588cd25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09f23377.css",
+    "static/js/main.bc470449.js"
+  ]
+}
