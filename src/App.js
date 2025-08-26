@@ -198,13 +198,13 @@ function App() {
         <LeftNavbar language={language} />
         <div className='header__placeholder'></div>
         <Introduction language={language} />
-        <div style={{marginTop: 250}}></div>
+        <div className="space"></div>
         <ExperiencePro language={language} />
-        <div style={{marginTop: 250}}></div>
+        <div className="space"></div>
         <Formation language={language} />
-        <div style={{marginTop: 250}}></div>
+        <div className="space"></div>
         <Competence language={language} />
-        <div style={{marginTop: 250}}></div>
+        <div className="space"></div>
       </div>
 
       {/* Projets */}

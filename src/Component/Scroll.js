@@ -13,48 +13,29 @@ const ScrollToQuarterPage = () => {
   };
 
   const isScrolling = useRef(false);
+  const scrollDirection = useRef(null);
+  const deltaYBuffer = useRef(0);
 
+  const SCROLL_THRESHOLD = 60; 
   const getCurrentGroup = () => {
     const hash = window.location.hash.replace('#', '');
-    // Cherche le groupe auquel appartient le hash actuel
     const groupEntry = Object.entries(sectionGroups).find(([_, ids]) =>
       ids.includes(hash)
     );
-
-    if (groupEntry) {
-      return groupEntry;
-    }
-
-    // Si le hash correspond à un groupe principal (par exemple #work)
-    if (sectionGroups[hash]) {
-      return [hash, sectionGroups[hash]];
-    }
-
-    // Par défaut, retourne 'introduction'
+    if (groupEntry) return groupEntry;
+    if (sectionGroups[hash]) return [hash, sectionGroups[hash]];
     return ['introduction', sectionGroups.introduction];
   };
 
-  const handleScroll = (event) => {
-    if (isScrolling.current) {
-      event.preventDefault();
-      return;
-    }
-
-    event.preventDefault();
-    isScrolling.current = true;
-
+  const scrollToSection = (direction) => {
     const hash = window.location.hash.replace('#', '');
-    const [currentGroupKey, currentGroup] = getCurrentGroup();
-
+    const [_, currentGroup] = getCurrentGroup();
     const currentIndex = currentGroup.indexOf(hash);
-
     let nextIndex;
 
-    if (event.deltaY > 0) {
-      // Scroll vers le bas
+    if (direction === 'down') {
       nextIndex = currentIndex === -1 ? 0 : Math.min(currentIndex + 1, currentGroup.length - 1);
     } else {
-      // Scroll vers le haut
       nextIndex = currentIndex === -1 ? 0 : Math.max(currentIndex - 1, 0);
     }
 
@@ -66,16 +47,31 @@ const ScrollToQuarterPage = () => {
       window.history.replaceState(null, '', `#${nextSectionId}`);
     }
 
+    isScrolling.current = true;
+    deltaYBuffer.current = 0; 
     setTimeout(() => {
       isScrolling.current = false;
-    }, 500);
+    }, 700); 
+  };
+
+  const handleWheel = (event) => {
+    event.preventDefault();
+
+    if (isScrolling.current) return;
+
+    deltaYBuffer.current += event.deltaY;
+
+    if (deltaYBuffer.current > SCROLL_THRESHOLD) {
+      scrollToSection('down');
+    } else if (deltaYBuffer.current < -SCROLL_THRESHOLD) {
+      scrollToSection('up');
+    }
   };
 
   useEffect(() => {
-    window.addEventListener('wheel', handleScroll, { passive: false });
-
+    window.addEventListener('wheel', handleWheel, { passive: false });
     return () => {
-      window.removeEventListener('wheel', handleScroll);
+      window.removeEventListener('wheel', handleWheel);
     };
   }, []);
 
@@ -83,4 +79,3 @@ const ScrollToQuarterPage = () => {
 };
 
 export default ScrollToQuarterPage;
-

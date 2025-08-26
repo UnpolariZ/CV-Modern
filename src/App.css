@@ -119,6 +119,10 @@ body.dark .navbar__button {
   width: 15vh;
 }
 
+.space{
+  margin-top: 12.5%;
+}
+
 body {
   margin-top: 10rem;
   color: rgb(14, 14, 14);
