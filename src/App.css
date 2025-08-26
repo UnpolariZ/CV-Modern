@@ -212,7 +212,6 @@ body.dark {
 .social__btn:hover {
   transition: 0.3s;
   background-color: rgb(255, 255, 255);
-  cursor: pointer;
 }
 .social__btn.dark:hover {
   transition: 0.3s;
