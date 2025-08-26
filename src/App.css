@@ -2,6 +2,13 @@
   cursor: initial;
 }
 
+p {
+  font-size: 1.625vh;
+}
+ul {
+  font-size: 1.625vh;
+}
+
 html {
   min-width: max-content;
   scroll-behavior: smooth
@@ -98,6 +105,18 @@ body.dark .navbar__button {
 .logo.dark {
   filter: invert(1);
   transition: 0.3s;
+}
+
+.istqb{
+  width: 15vh;
+}
+
+.opquast{
+  width: 15vh;
+}
+
+.programmeZ{
+  width: 15vh;
 }
 
 body {
