@@ -211,7 +211,7 @@ function App() {
       <div id="projet1" className={`video__container ${showCV || showAbout ? 'hidden' : 'visible'}`} style={{ zIndex: 2 }}>
                 <div className='header__placeholder'></div>
 
-        <div style={{ marginBottom: 20, marginTop: 200 }}>
+        <div className="video__space">
           <h2 style={{ justifySelf: "center" }}><MachineEcrire text="CV 2.0" /></h2>
           <span>HTML - CSS - JS - REACT - THREEJS - GSAP</span>
         </div>
@@ -220,7 +220,7 @@ function App() {
         </video>
 
         <span id="projet2" style={{ marginTop: 250 }}></span>
-        <div style={{ marginBottom: 20, marginTop: 225 }}>
+        <div className="video__space">
           <h2><MachineEcrire text="Modelisation3D.com" /></h2>
           <span>HTML - CSS - JS - THREEJS - GSAP</span>
         </div>
@@ -229,7 +229,7 @@ function App() {
         </video>
 
         <span id="projet3" style={{ marginTop: 250 }}></span>
-        <div style={{ marginBottom: 20, marginTop: 225 }}>
+        <div className="video__space">
           <h2><MachineEcrire text="Boulanger Fondation" /></h2>
           <span>HTML - SCSS - JS - JQUERY</span>
         </div>
@@ -238,7 +238,7 @@ function App() {
         </video>
 
         <span id="projet4" style={{ marginTop: 250 }}></span>
-        <div style={{ marginBottom: 20, marginTop: 225 }}>
+        <div className="video__space">
           <h2><MachineEcrire text="Outil de Signature - GMAIL" /></h2>
           <span>HTML - CSS - JS</span>
         </div>

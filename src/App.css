@@ -190,6 +190,11 @@ body.dark {
   font-size: 16px;
 }
 
+.video__space{
+  margin-bottom: 20px;
+  margin-top: 20vh;
+}
+
 .video__container {
   display: flex; 
   flex-direction:column;
