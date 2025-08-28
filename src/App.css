@@ -10,7 +10,7 @@ ul {
 }
 
 html {
-  min-width: max-content;
+  min-width: 100%;
   scroll-behavior: smooth
 }
 .cv-dev__container{
