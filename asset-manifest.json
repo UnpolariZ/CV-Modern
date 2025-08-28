@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CV-Modern/static/css/main.6bdf08ce.css",
+    "main.css": "/CV-Modern/static/css/main.8625f0ad.css",
     "main.js": "/CV-Modern/static/js/main.de9603a1.js",
     "static/js/488.0588cd25.chunk.js": "/CV-Modern/static/js/488.0588cd25.chunk.js",
     "static/media/aem.png": "/CV-Modern/static/media/aem.f218fc91ccd6491461bc.png",
@@ -26,12 +26,12 @@
     "static/media/home.svg": "/CV-Modern/static/media/home.c8e9d6680c639d1d4106e1dd4500f307.svg",
     "static/media/work.svg": "/CV-Modern/static/media/work.79c98238065aee6182bf89d7a5c378a0.svg",
     "static/media/email.svg": "/CV-Modern/static/media/email.01beeab905a172def851e21b2cc4e6d3.svg",
-    "main.6bdf08ce.css.map": "/CV-Modern/static/css/main.6bdf08ce.css.map",
+    "main.8625f0ad.css.map": "/CV-Modern/static/css/main.8625f0ad.css.map",
     "main.de9603a1.js.map": "/CV-Modern/static/js/main.de9603a1.js.map",
     "488.0588cd25.chunk.js.map": "/CV-Modern/static/js/488.0588cd25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bdf08ce.css",
+    "static/css/main.8625f0ad.css",
     "static/js/main.de9603a1.js"
   ]
 }
