@@ -246,7 +246,7 @@ function App() {
           <source src="video4.mp4" type="video/mp4" />
         </video>
 
-        <span style={{ marginBottom: 225 }}></span>
+        <span className="space__lastvideo"></span>
       </div>
     </div>
   );

@@ -21,8 +21,13 @@ input[type="checkbox"] {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
+    margin-top: 10%;
   }
-
+@media only screen and (min-width : 750px) {
+  input[type="checkbox"] {
+    margin-top: 0;
+  }
+}
   input[type="checkbox"]:before {
     content: '';
     position: absolute;
